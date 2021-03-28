@@ -25,7 +25,7 @@ const audioClips = [
 
 ]
 
-
+// rew class
 export default class App extends Component {
     state = {
         audio: null,
@@ -45,6 +45,7 @@ export default class App extends Component {
         this.setState({ audio: data.audio });
     };
 
+    //loops through all audio files and returns them in a list on page
     AllSoundFiles = () => {
       return audioClips.map((soundObj, index) => {
         return(
@@ -63,6 +64,8 @@ export default class App extends Component {
         )
       })
     }
+
+    //render the allsoundfiles function and show audio on app
     render() {
          return (
             <div>
