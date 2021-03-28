@@ -7,11 +7,24 @@
   pointer-events: none;
 }
 
+@font-face {
+  font-family: "anderson";
+  src: url("assets/AndersonGrotesk.otf");
+  }
+
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .App-enter {
+    animation: App-logo-spin infinite 5s linear;
+    cursor:pointer;
+    transition: opacity 0.5s;
   }
 }
+
+
+
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
 
 .App-header {
   background-color: #282c34;
@@ -21,18 +34,29 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  font-family: 'anderson';
+  background-image: url('assets/background.jpg') ;
+}
+
+.w-full {
+  width:40vw;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+
+
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
   }
 }
