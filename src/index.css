@@ -1,13 +1,22 @@
+
+@font-face {
+  font-family: "anderson";
+  src: url("assets/AndersonGrotesk.otf");
+  }
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 3em auto;
+  padding: 1px;
+  font-family: anderson ;
+  /* width: 50%; */
+  max-width: 900px;
+  -moz-user-focus: ignore;
+  background-image: url('assets/background.jpg');
+  /* background-color:rgb(33,33,33); */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.playerlist > div {
+  margin-bottom: 2em;
 }
+
